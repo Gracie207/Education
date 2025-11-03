@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>EduSite - Course Dashboard</title>
+    <link rel="stylesheet" href="assests/CSS/style.css">
+</head>
+<body>
+
+    <header class="site-header">
+        <div class="header-container">
+            <h1>
+                <a href="index.html">EduSite</a>
+            </h1>
+            <nav class="main-nav">
+                <a href="index.html">Home</a>
+                <a href="home.html">Dashboard</a>
+                <a href="catalog.html">Catalog</a>
+                <a href="certificates.html">Certificates</a>
+            </nav>
+            <button class="menu-button">
+                Menu
+            </button>
+        </div>
+    </header>
+
+    <main>
+        <div id="dashboard-layout">
+
+            <aside id="user-sidebar" class="sidebar">
+                <div class="text-center mb-6 profile-info">
+                    <div class="user-avatar">
+                        <img src="assests/Images/avatar.jpg" alt="User Avatar">
+                    </div>
+                    <h2>Welcome Back, Student!</h2>
+                    <p class="user-status">Status: Active Learner</p>
+                </div>
+
+                <div class="user-stats">
+                    <div class="stat-item">
+                        <span>Courses Completed:</span>
+                        <span id="courses-completed">2</span>
+                    </div>
+                    <div class="stat-item">
+                        <span>Current Streak (Days):</span>
+                        <span id="current-streak">14</span>
+                    </div>
+                </div>
+
+                <div class="user-id-box">
+                    <p>Your User ID:</p>
+                    <div class="id-display-row">
+                        <span id="user-id-display">Loading User ID...</span>
+                        <button onclick="/* copyUserId() */" aria-label="Copy User ID" class="button-inline">Copy ID</button>
+                    </div>
+                    <div id="copy-message" hidden>Copied!</div>
+                </div>
+            </aside>
+
+            <section id="dashboard-content">
+                <h2>Your Learning Journey</h2>
+
+                <div id="site-mission" class="mission-box">
+                    <h3>Our Mission</h3>
+                    <p>This interactive educational website is designed to provide engaging, supplementary learning material for subjects that require critical thinking e.g **math, science, technology** and others. It will feature some few short quizzes, images, code-based simulations (e.g using html, css) to help students to grasp complex topics like in physics and math.</p>
+                </div>
+
+                <div id="site-mission" class="mission-box">
+                    <h3>Our Vision</h3>
+                    <p>To empower every student to reach their full potential and becoming lifelong learners</p>
+                </div>
+
+                <div id="site-mission" class="mission-box">
+                    <h3>OJECTIVES OF EDUSITE</h3>
+                    <p>Enhancing teacher and school effectiveness ,integrating technology into the curriculum,fostering community engagement,building digital and entrepreneurial skills,and promoting lifelong learning opportunities.</p>
+                </div>
+                
+                <h3>In Progress</h3>
+                <div id="in-progress-grid" class="courses-grid">
+
+                    <div data-course-id="course-math-101" class="course-card in-progress">
+                        <div class="card-content">
+                            <h4>Advanced Calculus 101</h4>
+                            <p>Master derivatives, integrals, and differential equations.</p>
+                            <div class="course-meta progress-info">
+                                <span>50% Complete</span>
+                                <span>10 / 20 Lessons</span>
+                            </div>
+                            <div class="progress-bar-container">[Progress Bar: 50%]</div>
+                            <button class="button-secondary">
+                                Continue Lesson
+                            </button>
+                        </div>
+                    </div>
+
+                    <div data-course-id="course-coding-js" class="course-card in-progress new-enrollment">
+                        <div class="card-content">
+                            <h4>Vanilla JavaScript Mastery</h4>
+                            <p>Build powerful web applications without frameworks.</p>
+                            <div class="course-meta progress-info">
+                                <span>New Enrollment</span>
+                                <span>0 / 15 Lessons</span>
+                            </div>
+                            <div class="progress-bar-container">[Progress Bar: 0%]</div>
+                            <button class="button-secondary">
+                                Start Course
+                            </button>
+                        </div>
+                    </div>
+                </div>
+
+                <h3>Recommended for You</h3>
+                <div id="recommended-grid" class="courses-grid recommended-courses">
+                    <div data-course-id="course-design-intro" class="course-card recommended">
+                        <div class="card-content">
+                            <h4>Introduction to UI/UX Design</h4>
+                            <p>Learn the fundamentals of user interface and user experience design principles.</p>
+                            <span class="course-tag">Design</span>
+                            <button class="button-tertiary">
+                                View Details
+                            </button>
+                        </div>
+                    </div>
+                    <div data-course-id="course-physics" class="course-card recommended">
+                        <div class="card-content">
+                            <h4>Classical Mechanics: Kinematics</h4>
+                            <p>A simulation-heavy course on motion, velocity, and acceleration.</p>
+                            <span class="course-tag">Science</span>
+                            <button class="button-tertiary">
+                                View Details
+                            </button>
+                        </div>
+                    </div>
+                </div>
+                
+                <div id="empty-state" class="empty-state-box" hidden>
+                    <p>No courses found. Time to enroll in a new one!</p>
+                    <a href="catalog.html" class="button-primary">
+                        Browse Catalog
+                    </a>
+                </div>
+
+            </section>
+        </div>
+    </main>
+    
+    <div id="message-box" hidden></div>
+    
+    <footer class="site-footer">
+        <p>&copy; 2025 EduSite. All rights reserved.</p>
+    </footer>
+
+</body>
+</html>
+
+

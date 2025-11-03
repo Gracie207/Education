@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>EduSite - Course Catalog</title>
+    <link rel="stylesheet" href="assests/CSS/style.css">
+</head>
+<body>
+
+    <header class="site-header">
+        <div class="header-container">
+            <h1>
+                <a href="index.html">EduSite</a>
+            </h1>
+            <nav class="main-nav">
+                <a href="index.html">Home</a>
+                <a href="home.html">Dashboard</a>
+                <a href="catalog.html">Catalog</a>
+                <a href="certificates.html">Certificates</a>
+            </nav>
+            <button class="menu-button">
+                Menu
+            </button>
+        </div>
+    </header>
+
+    <main class="catalog-main">
+        <h2 class="page-title">Explore the Course Catalog</h2>
+        <p class="page-subtitle">Find the next course to sharpen your critical thinking skills.</p>
+
+        <div id="catalog-filters" class="filters-container">
+            <input type="text" placeholder="Search courses (e.g., Physics, Calculus)" class="search-input">
+            <select class="subject-select">
+                <option>Filter by Subject</option>
+                <option>Mathematics</option>
+                <option>Science & Physics</option>
+                <option>Technology & Coding</option>
+                <option>Design</option>
+            </select>
+            <button class="button-primary search-button">Search</button>
+        </div>
+
+        <div id="catalog-grid" class="courses-grid">
+            
+            <div class="course-card catalog-listing">
+                <div class="card-content">
+                    <span class="course-tag new-tag">New</span>
+                    <h3>Computational Physics: Motion</h3>
+                    <p class="course-description">Explore complex motion problems using Python simulations and HTML/CSS visualizations.</p>
+                    <div class="course-meta">
+                        <span class="difficulty">Difficulty: Advanced</span>
+                        <span class="lessons-count">Lessons: 25</span>
+                    </div>
+                    <button class="button-primary enroll-button">Enroll Now</button>
+                </div>
+            </div>
+            
+            <div class="course-card catalog-listing">
+                <div class="card-content">
+                    <span class="course-tag math-tag">Math</span>
+                    <h3>Linear Algebra Fundamentals</h3>
+                    <p class="course-description">Vectors, matrices, and systems of equations for engineering and data science.</p>
+                    <div class="course-meta">
+                        <span class="difficulty">Difficulty: Intermediate</span>
+                        <span class="lessons-count">Lessons: 18</span>
+                    </div>
+                    <button class="button-primary enroll-button">Enroll Now</button>
+                </div>
+            </div>
+            
+            <div class="course-card catalog-listing">
+                <div class="card-content">
+                    <span class="course-tag tech-tag">Tech</span>
+                    <h3>Web Accessibility & Semantic HTML</h3>
+                    <p class="course-description">Learn to build robust, inclusive web experiences from the ground up.</p>
+                    <div class="course-meta">
+                        <span class="difficulty">Difficulty: Beginner</span>
+                        <span class="lessons-count">Lessons: 10</span>
+                    </div>
+                    <button class="button-primary enroll-button">Enroll Now</button>
+                </div>
+            </div>
+            
+            <div class="course-card catalog-listing">
+                <div class="card-content">
+                    <span class="course-tag science-tag">Science</span>
+                    <h3>Introduction to Thermodynamics</h3>
+                    <p class="course-description">The study of heat, work, and energy in physical systems with engaging diagrams.</p>
+                    <div class="course-meta">
+                        <span class="difficulty">Difficulty: Intermediate</span>
+                        <span class="lessons-count">Lessons: 14</span>
+                    </div>
+                    <button class="button-primary enroll-button">Enroll Now</button>
+                </div>
+            </div>
+            
+        </div>
+    </main>
+    
+    <footer class="site-footer">
+        <p>&copy; 2025 EduSite. All rights reserved.</p>
+    </footer>
+
+</body>
+
+</html>
